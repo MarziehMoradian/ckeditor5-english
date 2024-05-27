@@ -19,10 +19,12 @@ export default class HashtagPlugin extends Plugin {
 
   init() {
     const editor = this.editor;
-    const viewDocument = editor.editing.view.document;
+    const viewDocument = editor?.editing?.view?.document;
+
     const model = editor.model;
 
-    const textWatcher = new TextWatcher(model, /#\w*$/);
+    const pattern = /#\w*$/;
+    const textWatcher = new TextWatcher(viewDocument, pattern);
 
     textWatcher.on("matched", async (evt: any, data: any) => {
       const matchedText = data.text;
@@ -62,7 +64,7 @@ export default class HashtagPlugin extends Plugin {
       const selection = model.document.selection;
       const position = selection.getFirstPosition();
 
-      writer.insertText(hashtag, position);
+      writer.insertText(hashtag, { bold: true });
     });
   }
 }
