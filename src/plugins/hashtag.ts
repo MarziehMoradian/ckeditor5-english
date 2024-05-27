@@ -1,6 +1,6 @@
 // src/plugins/hashtag.js
 
-import Plugin from "@ckeditor/ckeditor5-core/src/";
+import Plugin from "@ckeditor/ckeditor5-core/src/plugin";
 import TextWatcher from "@ckeditor/ckeditor5-typing/src/textwatcher";
 
 export default class HashtagPlugin extends Plugin {

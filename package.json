@@ -13,6 +13,7 @@
     "@ckeditor/ckeditor5-autosave": "41.4.2",
     "@ckeditor/ckeditor5-basic-styles": "41.4.2",
     "@ckeditor/ckeditor5-block-quote": "41.4.2",
+    "@ckeditor/ckeditor5-build-classic": "^41.4.2",
     "@ckeditor/ckeditor5-cloud-services": "41.4.2",
     "@ckeditor/ckeditor5-code-block": "41.4.2",
     "@ckeditor/ckeditor5-editor-classic": "41.4.2",
@@ -28,6 +29,7 @@
     "@ckeditor/ckeditor5-mention": "41.4.2",
     "@ckeditor/ckeditor5-paragraph": "41.4.2",
     "@ckeditor/ckeditor5-paste-from-office": "41.4.2",
+    "@ckeditor/ckeditor5-react": "^7.0.0",
     "@ckeditor/ckeditor5-typing": "41.4.2",
     "@ckeditor/ckeditor5-undo": "41.4.2",
     "@ckeditor/ckeditor5-upload": "41.4.2"
